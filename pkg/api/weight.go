@@ -22,3 +22,16 @@ func NewWeightService(weightRepo WeightRepository) WeightService {
 		storage: weightRepo,
 	}
 }
+
+// add these below NewWeightService
+func (w *weightService) CalculateBMR(height, age, weight int, sex string) (int, error) {
+	panic("implement me")
+}
+
+func (w *weightService) DailyIntake(BMR, activityLevel int, weightGoal string) (int, error) {
+	panic("implement me")
+}
+
+func (w *weightService) New(request NewWeightRequest) error {
+	panic("implement me")
+}
